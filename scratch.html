@@ -28,12 +28,23 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-image">
+            <img src="assets/img/hero.jpg" alt="Mountain Landscape">
+        </div>
+        <div class="hero-overlay">
+            <div class="container">
+                <h2>My Creative Space</h2>
+                <p>Exploring ideas and sharing experiences</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Main Content -->
     <main>
         <section class="scratch">
             <div class="container">
-                <h2 class="page-title">My Business Journey</h2>
-                
                 <!-- Content Section -->
                 <div class="content-section">
                     <h3>About This Page</h3>
@@ -43,9 +54,10 @@
                 <!-- Navigation Links -->
                 <div class="content-section">
                     <h3>Quick Navigation</h3>
-                    <ul>
+                    <ul class="nav-links">
                         <li><a href="#video-section">Watch the Video</a></li>
                         <li><a href="#tableau-section">View the Data</a></li>
+                        <li><a href="#strategy-section">Business Strategies (List)</a></li>
                         <li><a href="snake.html">Play Snake Game</a></li>
                     </ul>
                 </div>
@@ -68,22 +80,22 @@
 
                 <!-- Tableau Section -->
                 <div id="tableau-section" class="content-section">
-                    <h3>Business Analytics</h3>
+                    <h3>Help Desk Analytics Dashboard</h3>
                     <div class="tableau-container">
-                        <div class='tableauPlaceholder' id='viz1709234567890' style='position: relative'>
+                        <div class='tableauPlaceholder' id='viz1745475760245' style='position: relative'>
                             <noscript>
                                 <a href='#'>
-                                    <img alt='Business Analytics Dashboard' src='https://public.tableau.com/static/images/Bu/BusinessAnalyticsDashboard_1/BusinessAnalyticsDashboard/1_rss.png' style='border: none' />
+                                    <img alt='Help Desk Dashboard' src='https://public.tableau.com/static/images/He/HelpDeskDashboardRWFD_16135723986830/viz/1_rss.png' style='border: none' />
                                 </a>
                             </noscript>
                             <object class='tableauViz' style='display:none;'>
                                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                                 <param name='embed_code_version' value='3' />
                                 <param name='site_root' value='' />
-                                <param name='name' value='BusinessAnalyticsDashboard_1/BusinessAnalyticsDashboard' />
+                                <param name='name' value='HelpDeskDashboardRWFD_16135723986830/viz' />
                                 <param name='tabs' value='no' />
                                 <param name='toolbar' value='yes' />
-                                <param name='static_image' value='https://pudding.cool/projects/clocks/'/>
+                                <param name='static_image' value='https://public.tableau.com/static/images/He/HelpDeskDashboardRWFD_16135723986830/viz/1.png' />
                                 <param name='animate_transition' value='yes' />
                                 <param name='display_static_image' value='yes' />
                                 <param name='display_spinner' value='yes' />
@@ -96,7 +108,7 @@
                 </div>
 
                 <!-- Business Strategy List -->
-                <div class="content-section">
+                <div id="strategy-section" class="content-section">
                     <h3>Key Business Strategies</h3>
                     <ol class="strategy-list">
                         <li>Market Analysis
@@ -135,10 +147,10 @@
 
     <!-- Tableau Script -->
     <script type='text/javascript'>
-        var divElement = document.getElementById('viz1709234567890');
+        var divElement = document.getElementById('viz1745475760245');
         var vizElement = divElement.getElementsByTagName('object')[0];
         vizElement.style.width='100%';
-        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        vizElement.style.height=(divElement.offsetWidth*0.6)+'px';
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
