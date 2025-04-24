@@ -23,7 +23,6 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="scratch.html" class="active">Scratch</a></li>
-                    <li><a href="snake.html">Snake Game</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,7 +46,6 @@
                     <ul>
                         <li><a href="#video-section">Watch the Video</a></li>
                         <li><a href="#tableau-section">View the Data</a></li>
-                        <li><a href="#game-section">Play the Game</a></li>
                         <li><a href="snake.html">Play Snake Game</a></li>
                     </ul>
                 </div>
@@ -124,19 +122,6 @@
                         </li>
                     </ol>
                 </div>
-
-                <!-- Game Section -->
-                <div id="game-section" class="content-section">
-                    <h3>Business Strategy Game</h3>
-                    <div class="game-container">
-                        <h4>Business Decision Maker</h4>
-                        <div id="game-content">
-                            <p>Test your business acumen with this interactive decision-making game!</p>
-                            <button id="start-game">Start Game</button>
-                            <div id="game-output"></div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -147,40 +132,6 @@
             <p>&copy; 2024 Hunter Bostic. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Game Script -->
-    <script>
-        document.getElementById('start-game').addEventListener('click', function() {
-            const scenarios = [
-                "Your company is facing increased competition. What's your strategy?",
-                "A new market opportunity has emerged. How do you proceed?",
-                "Your team is struggling with productivity. What's your approach?",
-                "A key client is threatening to leave. How do you respond?",
-                "Your budget has been cut. What's your plan?"
-            ];
-            
-            const strategies = [
-                "Focus on innovation and product differentiation",
-                "Conduct thorough market research before expanding",
-                "Implement team-building activities and clear communication channels",
-                "Offer personalized solutions and demonstrate value",
-                "Prioritize essential operations and seek efficiency improvements"
-            ];
-            
-            const randomIndex = Math.floor(Math.random() * scenarios.length);
-            const output = document.getElementById('game-output');
-            output.innerHTML = `
-                <div class="scenario">
-                    <h5>Scenario:</h5>
-                    <p>${scenarios[randomIndex]}</p>
-                </div>
-                <div class="strategy">
-                    <h5>Recommended Strategy:</h5>
-                    <p>${strategies[randomIndex]}</p>
-                </div>
-            `;
-        });
-    </script>
 
     <!-- Tableau Script -->
     <script type='text/javascript'>
