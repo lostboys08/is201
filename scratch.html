@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Bostic | Scratch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scratch.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="scratch-page">
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Hunter Bostic</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="scratch.html" class="active">Scratch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="scratch">
+            <div class="container">
+                <h2 class="page-title">My Business Journey</h2>
+                
+                <!-- Content Section -->
+                <div class="content-section">
+                    <h3>About This Page</h3>
+                    <p>Welcome to my scratch page! Here I'll share my passion for business strategy and management through various media and interactive elements.</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="content-section">
+                    <h3>Quick Navigation</h3>
+                    <ul>
+                        <li><a href="#video-section">Watch the Video</a></li>
+                        <li><a href="#tableau-section">View the Data</a></li>
+                        <li><a href="#game-section">Play the Game</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Video Section -->
+                <div id="video-section" class="content-section">
+                    <h3>Featured Video</h3>
+                    <div class="video-container">
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/CGgFySUbnYg" 
+                            title="Business Management Video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Tableau Section -->
+                <div id="tableau-section" class="content-section">
+                    <h3>Business Analytics</h3>
+                    <div class="tableau-container">
+                        <div class='tableauPlaceholder' id='viz1709234567890' style='position: relative'>
+                            <noscript>
+                                <a href='#'>
+                                    <img alt='Business Analytics Dashboard' src='https://public.tableau.com/static/images/Bu/BusinessAnalyticsDashboard_1/BusinessAnalyticsDashboard/1_rss.png' style='border: none' />
+                                </a>
+                            </noscript>
+                            <object class='tableauViz' style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='BusinessAnalyticsDashboard_1/BusinessAnalyticsDashboard' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https://public.tableau.com/static/images/Bu/BusinessAnalyticsDashboard_1/BusinessAnalyticsDashboard/1.png' />
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Strategy List -->
+                <div class="content-section">
+                    <h3>Key Business Strategies</h3>
+                    <ol class="strategy-list">
+                        <li>Market Analysis
+                            <ul>
+                                <li>Competitive Analysis</li>
+                                <li>Market Trends</li>
+                                <li>Customer Behavior</li>
+                            </ul>
+                        </li>
+                        <li>Strategic Planning
+                            <ul>
+                                <li>Goal Setting</li>
+                                <li>Resource Allocation</li>
+                                <li>Timeline Development</li>
+                            </ul>
+                        </li>
+                        <li>Implementation
+                            <ul>
+                                <li>Team Coordination</li>
+                                <li>Progress Monitoring</li>
+                                <li>Performance Evaluation</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Game Section -->
+                <div id="game-section" class="content-section">
+                    <h3>Business Strategy Game</h3>
+                    <div class="game-container">
+                        <h4>Business Decision Maker</h4>
+                        <div id="game-content">
+                            <p>Test your business acumen with this interactive decision-making game!</p>
+                            <button id="start-game">Start Game</button>
+                            <div id="game-output"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hunter Bostic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Game Script -->
+    <script>
+        document.getElementById('start-game').addEventListener('click', function() {
+            const scenarios = [
+                "Your company is facing increased competition. What's your strategy?",
+                "A new market opportunity has emerged. How do you proceed?",
+                "Your team is struggling with productivity. What's your approach?",
+                "A key client is threatening to leave. How do you respond?",
+                "Your budget has been cut. What's your plan?"
+            ];
+            
+            const strategies = [
+                "Focus on innovation and product differentiation",
+                "Conduct thorough market research before expanding",
+                "Implement team-building activities and clear communication channels",
+                "Offer personalized solutions and demonstrate value",
+                "Prioritize essential operations and seek efficiency improvements"
+            ];
+            
+            const randomIndex = Math.floor(Math.random() * scenarios.length);
+            const output = document.getElementById('game-output');
+            output.innerHTML = `
+                <div class="scenario">
+                    <h5>Scenario:</h5>
+                    <p>${scenarios[randomIndex]}</p>
+                </div>
+                <div class="strategy">
+                    <h5>Recommended Strategy:</h5>
+                    <p>${strategies[randomIndex]}</p>
+                </div>
+            `;
+        });
+    </script>
+
+    <!-- Tableau Script -->
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1709234567890');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';
+        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</body>
+</html>
